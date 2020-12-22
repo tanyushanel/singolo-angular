@@ -9,6 +9,9 @@ import { ServicesComponent } from './services/services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { QuoteComponent } from './quote/quote.component';
+import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { QuoteComponent } from './quote/quote.component';
     ServicesComponent,
     PortfolioComponent,
     AboutComponent,
-    QuoteComponent
+    QuoteComponent,
+    HomeComponent,
+    MenuComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
