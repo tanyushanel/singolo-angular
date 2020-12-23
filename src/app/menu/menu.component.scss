@@ -1,0 +1,34 @@
+li {
+  display: inline-block;
+  text-transform: uppercase;
+
+  margin: 0 1rem;
+
+  a {
+    color: #ffffff;
+  }
+
+  a:active,
+  a:hover {
+    color: #f06c64;
+  }
+
+  &:not(:last-child):after {
+    position: absolute;
+    content: ".";
+    top: -0.25rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+}
+
+ul {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.5rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  letter-spacing: -0.03em;
+}

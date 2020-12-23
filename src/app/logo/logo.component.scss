@@ -1,0 +1,14 @@
+h1 {
+  position: absolute;
+  line-height: 1.5rem;
+  margin: 0;
+  top: 2rem;
+  left: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ffffff;
+
+  & span {
+    color: #f06c64;
+  }
+}
