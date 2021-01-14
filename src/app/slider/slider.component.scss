@@ -1,5 +1,35 @@
 .slider.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 37.125rem;
   background: #f06c64;
   border-bottom: 0.375rem solid#EA676B;
+}
+
+.btn {
+  margin: 0 1rem;
+  position: absolute;
+  font-size: 4rem;
+  border-radius: 2px;
+  color: #e94348;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.sld-img {
+  margin: -1.625rem 0 0 7rem;
+  display: inline-block;
+}
+
+.horizont {
+  margin-left: 13.625rem;
+  transform: rotate(90deg);
 }

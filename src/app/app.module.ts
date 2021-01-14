@@ -12,6 +12,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
+import { PhoneComponent } from './slider/phones/phone/phone.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LogoComponent } from './logo/logo.component';
     QuoteComponent,
     HomeComponent,
     MenuComponent,
-    LogoComponent
+    LogoComponent,
+    PhoneComponent
   ],
   imports: [
     BrowserModule,
