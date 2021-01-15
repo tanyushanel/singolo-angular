@@ -1,5 +1,7 @@
-.phone {
+.shell {
   position: relative;
+  display: flex;
+  justify-content: space-around;
   background: url("../../../../assets/phone-vertical.svg") no-repeat;
   width: 13.5rem;
   height: 28.625rem;
@@ -8,8 +10,15 @@
 .display {
   position: relative;
   top: 4.063rem;
-  left: 0.906rem;
   width: 11.75rem;
   height: 20.813rem;
-  background: url("../../../../assets/phone-vertical-display.png");
+  background: url("../../../../assets/phone-vertical-display.png") no-repeat;
+}
+
+.switch-btn {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  bottom: 0.5rem;
 }
