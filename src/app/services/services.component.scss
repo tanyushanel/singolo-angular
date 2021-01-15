@@ -20,5 +20,17 @@ h2 {
 }
 
 .desc {
+  margin-left: 1.25rem;
   display: inline-block;
+  width: 13.75rem;
+}
+
+.desc p {
+  font-size: 0.75rem;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
