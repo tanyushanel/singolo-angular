@@ -32,3 +32,6 @@ h2 {
   line-height: 1.875rem;
   letter-spacing: 0.012rem;
 }
+
+.container:nth-child(n + 2) {
+}

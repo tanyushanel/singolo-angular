@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
 import { PhoneComponent } from './slider/phones/phone/phone.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,11 @@ import { PhoneComponent } from './slider/phones/phone/phone.component';
     HomeComponent,
     MenuComponent,
     LogoComponent,
-    PhoneComponent
+    PhoneComponent,
+    SocialComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

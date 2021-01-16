@@ -1,0 +1,41 @@
+.about {
+  background: #f2f2f2;
+  color: #666d89;
+}
+.container {
+  padding: 4rem 2.5rem 3rem;
+  border-bottom: 0.375rem solid #ffffff;
+}
+
+h2 {
+  line-height: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+
+.staff-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc {
+  display: inline-block;
+  text-align: justify;
+  width: 18.75rem;
+  line-height: 1.4rem;
+}
+
+h3 {
+  margin: 0.8rem 0 0.4rem;
+}
+
+.desc {
+  font-size: 0.75em;
+  margin: 0;
+}
+
+.empl-img {
+  width: 18.75rem;
+  height: 18.75rem;
+  margin-top: 1.3rem;
+}
