@@ -1,3 +1,4 @@
+import { SocialeComponent } from './sociale/sociale.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
 import { PhoneComponent } from './slider/phones/phone/phone.component';
-import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { SocialComponent } from './social/social.component';
     MenuComponent,
     LogoComponent,
     PhoneComponent,
-    SocialComponent,
+    SocialeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
