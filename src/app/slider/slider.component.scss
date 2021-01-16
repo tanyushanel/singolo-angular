@@ -14,6 +14,7 @@
   font-size: 4rem;
   border-radius: 2px;
   color: #e94348;
+  cursor: pointer;
 }
 
 .prev {
@@ -33,6 +34,6 @@
 }
 
 .horizont {
-  margin-left: 13.625rem;
-  transform: rotate(90deg);
+  margin-left: 12.75rem;
+  transform: rotate(90deg) translate(-0.75rem, 0);
 }

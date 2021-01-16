@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   background: url("../../../../assets/phone-vertical.svg") no-repeat;
+  top: -0.9rem;
   width: 13.5rem;
   height: 28.625rem;
 }
@@ -13,6 +14,7 @@
   width: 11.75rem;
   height: 20.813rem;
   background: url("../../../../assets/phone-vertical-display.png") no-repeat;
+  cursor: pointer;
 }
 
 .switch-btn {
@@ -21,4 +23,5 @@
   height: 2.5rem;
   border-radius: 50%;
   bottom: 0.5rem;
+  cursor: pointer;
 }
