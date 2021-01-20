@@ -3,8 +3,22 @@
   width: 63.75rem;
   margin: 0 auto;
 }
-header {
+header,
+footer {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
   background: #2d303a;
-  height: 89px;
-  border-bottom: 0.375rem solid #323746;
+  border-bottom: 0.45rem solid #323746;
+  color: #666d89;
+}
+
+.soc {
+  margin: 0.5rem 2.5rem;
+  text-align: right;
+}
+
+.cr {
+  padding: 2.5rem;
+  font-weight: 900;
 }
