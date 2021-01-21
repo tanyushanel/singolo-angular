@@ -1,4 +1,8 @@
-<div class="shell">
-    <div class="display"></div>
+<div class="shell"
+     [style.box-shadow]="isHorizontal ? shadowHorizont :  shadowVertical">
+    <div class="display"
+         [class.horizont]="isHorizontal">
+        <img [src]="isHorizontal ?  imgHorizont : imgVertical">
+    </div>
     <div class="switch-btn"></div>
 </div>

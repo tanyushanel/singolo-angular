@@ -22,7 +22,7 @@ h2 {
 form {
   flex: 1 1 auto;
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   margin-right: 1.375rem;
 }
 
@@ -39,19 +39,22 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   border-radius: 0.5rem;
-  padding: 0.625rem;
+  padding-left: 1rem;
   color: #f48c8f;
   outline: none;
-  margin-bottom: 0.5rem;
   resize: none;
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #f48c8f;
 }
 
 textarea {
   height: 10rem;
+  font-family: Lato, "Helvetica Neue", sans-serif;
 }
 
 a {

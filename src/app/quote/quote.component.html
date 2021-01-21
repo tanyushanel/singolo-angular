@@ -12,17 +12,28 @@
                    name="name"
                    id="name"
                    placeholder="Name (required)"
+                   onblur="this.placeholder='Name (required)'"
+                   onfocus="this.placeholder = ''"
                    required>
-            <input type="email"
+            <input type="
+                   email"
                    name="email"
                    id="email"
                    placeholder="Email (required)"
+                   onblur="this.placeholder='Email (required)'"
+                   onfocus="this.placeholder=''"
                    required>
-            <input type="text"
+            <input type="
+                   text"
                    name="subject"
                    id="subject"
-                   placeholder="Subject">
-            <textarea class="details">Describe your project in detail...</textarea>
+                   placeholder="Subject"
+                   onblur="this.placeholder='Subject'"
+                   onfocus="this.placeholder = ''">
+            <textarea class="details"
+                      placeholder="Describe your project in detail..."
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder='Describe your project in detail...'"></textarea>
             <button class="submit-btn">Send</button>
         </form>
         <div class="info">
