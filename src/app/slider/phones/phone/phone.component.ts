@@ -10,6 +10,10 @@ export class PhoneComponent implements OnInit {
   imgHorizont: string = '../../../../assets/phone-hor-display.png';
   imgVertical: string = '../../../../assets/phone-vertical-display.png';
 
+  isOrig: boolean = true;
+
+  isOn: boolean = true;
+
   shadowHorizont: string =
     '25px -25px #ce5d56, 20px -20px #ce5d56, 15px -15px #ce5d56, 10px -10px #ce5d56, 5px -5px #ce5d56';
   shadowVertical: string =
@@ -18,4 +22,12 @@ export class PhoneComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  shuffle(event): void {
+    this.isOrig = !this.isOrig;
+  }
+
+  switchOnOff(event): void {
+    this.isOn = !this.isOn;
+  }
 }

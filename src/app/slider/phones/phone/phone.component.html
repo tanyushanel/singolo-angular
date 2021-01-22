@@ -2,7 +2,11 @@
      [style.box-shadow]="isHorizontal ? shadowHorizont :  shadowVertical">
     <div class="display"
          [class.horizont]="isHorizontal">
-        <img [src]="isHorizontal ?  imgHorizont : imgVertical">
+        <img [style.display]="isOn ? 'block' : 'none'"
+             [src]="isOrig ? (isHorizontal ?  imgHorizont : imgVertical) : (isHorizontal ?  imgVertical: imgHorizont)"
+             (click)="shuffle($event)">
+
     </div>
-    <div class="switch-btn"></div>
+    <div class="switch-btn"
+         (click)="switchOnOff($event)"></div>
 </div>
