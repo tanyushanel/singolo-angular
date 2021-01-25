@@ -7,34 +7,33 @@
         mauris condimentum nibh.</p>
 
     <div class="contacts-container">
-        <form>
+        <form [formGroup]="form"
+              (ngSubmit)=sendMessage()>
             <input type="text"
-                   name="name"
-                   id="name"
                    placeholder="Name (required)"
                    onblur="this.placeholder='Name (required)'"
                    onfocus="this.placeholder = ''"
+                   formControlName="name"
                    required>
-            <input type="
-                   email"
-                   name="email"
-                   id="email"
+            <input type="email"
                    placeholder="Email (required)"
                    onblur="this.placeholder='Email (required)'"
                    onfocus="this.placeholder=''"
+                   formControlName="email"
                    required>
-            <input type="
-                   text"
-                   name="subject"
-                   id="subject"
+            <input type="text"
                    placeholder="Subject"
                    onblur="this.placeholder='Subject'"
-                   onfocus="this.placeholder = ''">
+                   onfocus="this.placeholder = ''"
+                   formControlName="subject">
             <textarea class="details"
                       placeholder="Describe your project in detail..."
                       onfocus="this.placeholder = ''"
-                      onblur="this.placeholder='Describe your project in detail...'"></textarea>
+                      onblur="this.placeholder='Describe your project in detail...'"
+                      formControlName="content"></textarea>
             <button class="submit-btn">Send</button>
+
+            <p [style.display]="isSent ? 'block' : 'none' "> Message is sent. </p>
         </form>
         <div class="info">
             <h3>Contact Information</h3>

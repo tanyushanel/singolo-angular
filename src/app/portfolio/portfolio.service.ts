@@ -20,7 +20,7 @@ export class PortfolioService {
   ];
 
   constructor() {
-    this.imgArray = this.getFromLocalStore();
+    // this.imgArray = this.getFromLocalStore();
   }
 
   randomizeImg(): void {
