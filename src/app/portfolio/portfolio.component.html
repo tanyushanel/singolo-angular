@@ -5,27 +5,26 @@
     </p>
 
     <ul class="sort-buttons">
-        <li class="sort-btn">All</li>
-        <li class="sort-btn">Web Design</li>
-        <li class="sort-btn">Graphic Design</li>
-        <li class="sort-btn">Artwork</li>
+        <li class="sort-btn"
+            [class.active]="selectedFilter === 'All'"
+            (click)="shuffleImg('All')">All</li>
+        <li class="sort-btn"
+            (click)="shuffleImg('Web Design')"
+            [class.active]="selectedFilter === 'Web Design'">Web Design</li>
+        <li class="sort-btn"
+            (click)="shuffleImg('Graphic Design')"
+            [class.active]="selectedFilter === 'Graphic Design'">Graphic Design</li>
+        <li class="sort-btn"
+            (click)="shuffleImg('Artwork')"
+            [class.active]="selectedFilter === 'Artwork'">Artwork</li>
     </ul>
 
     <ul class="portfolio-list">
-        <li class="portfolio-img"> <img src="../../assets/portfolio-1.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-2.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-3.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-4.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-5.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-6.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-7.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-8.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-9.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-10.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-11.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-12.png"></li>
 
-        <li class="portfolio-img"> <img src="../../assets/portfolio-1.png"></li>
-        <li class="portfolio-img"> <img src="../../assets/portfolio-1.png"></li>
+        <li class="portfolio-img"
+            *ngFor="let item of portfolioService.imgArray">
+            <img src="{{item}}">
+        </li>
+
     </ul>
 </div>
