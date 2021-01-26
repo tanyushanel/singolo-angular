@@ -62,15 +62,15 @@
   background: #648bf0;
 }
 
-.phone.mini:first-child {
+.mini:first-child {
   transform: scale(0.65) translate(4rem, 0.65rem);
 }
 
-.phone.mini:last-child {
+.mini:last-child {
   transform: scale(0.65) translate(-3rem, 0.65rem);
 }
 
-.phone.maxi {
+.maxi {
   position: relative;
   transform: scale(1.065);
   z-index: 2;

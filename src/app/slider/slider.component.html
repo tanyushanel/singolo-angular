@@ -1,20 +1,24 @@
 <div class="slider container">
-    <div class="btn prev material-icons">
+    <div class="btn prev material-icons"
+         (click)="shiftImg()">
         keyboard_arrow_left
     </div>
     <ul class="slider-images">
-        <li class="sld-img sld-img-1">
+        <li class="sld-img sld-img-1"
+            [style.display]="toggler ? 'block' : 'none'">
             <app-phone class="phone"></app-phone>
             <app-phone class="phone horizont"
                        [isHorizontal]="true"></app-phone>
         </li>
-        <li class="sld-img sld-img-2">
+        <li class="sld-img sld-img-2"
+            [style.display]="toggler ? 'none' : 'block'">
             <app-phone class="phone mini"></app-phone>
-            <app-phone class="phone maxi"></app-phone>
+            <app-phone class="phone maxi "></app-phone>
             <app-phone class="phone mini"></app-phone>
         </li>
     </ul>
-    <div class="btn next material-icons">
+    <div class="btn next material-icons"
+         (click)="shiftImg()">
         keyboard_arrow_right
     </div>
 </div>
