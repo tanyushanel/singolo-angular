@@ -4,8 +4,6 @@
   justify-content: center;
   flex-direction: column;
   height: 37.125rem;
-  background: #f06c64;
-  border-bottom: 0.375rem solid#EA676B;
 }
 
 .btn {
@@ -15,6 +13,7 @@
   border-radius: 2px;
   color: #e94348;
   cursor: pointer;
+  z-index: 1;
 }
 
 .btn:hover {
@@ -30,14 +29,49 @@
 }
 
 .sld-img {
-  margin: -1.625rem 0 0 7rem;
+  position: absolute;
+  padding: 4.25rem 0 0 7rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 0.375rem solid#EA676B;
+}
+
+.slider-images {
+  height: 100%;
 }
 
 .phone {
   display: inline-block;
 }
 
+//  slide-1
+
 .horizont {
   margin-left: 12.75rem;
   transform: rotate(90deg) translate(-0.75rem, 0);
+}
+
+.sld-img-1 {
+  background: #f06c64;
+}
+
+// slide-2
+
+.sld-img-2 {
+  background: #648bf0;
+}
+
+.phone.mini:first-child {
+  transform: scale(0.65) translate(4rem, 0.65rem);
+}
+
+.phone.mini:last-child {
+  transform: scale(0.65) translate(-3rem, 0.65rem);
+}
+
+.phone.maxi {
+  position: relative;
+  transform: scale(1.065);
+  z-index: 2;
 }

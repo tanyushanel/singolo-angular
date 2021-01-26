@@ -15,9 +15,9 @@ export class PhoneComponent implements OnInit {
   isOn: boolean = true;
 
   shadowHorizont: string =
-    '25px -25px #ce5d56, 20px -20px #ce5d56, 15px -15px #ce5d56, 10px -10px #ce5d56, 5px -5px #ce5d56';
+    '25px -25px rgba(0,0,0,0.1), 20px -20px rgba(0,0,0,0.1), 15px -15px rgba(0,0,0,0.1), 10px -10px rgba(0,0,0,0.1), 5px -5px rgba(0,0,0,0.1)';
   shadowVertical: string =
-    '25px 25px #ce5d56, 20px 20px #ce5d56, 15px 15px #ce5d56, 10px 10px #ce5d56, 5px 5px #ce5d56';
+    '25px 25px rgba(0,0,0,0.1), 20px 20px rgba(0,0,0,0.1), 15px 15px rgba(0,0,0,0.1), 10px 10px rgba(0,0,0,0.1), 5px 5px rgba(0,0,0,0.1)';
 
   constructor() {}
 

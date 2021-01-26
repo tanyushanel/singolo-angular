@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider.component.scss'],
 })
 export class SliderComponent implements OnInit {
+  width: string = '100%';
+  shiftImg(): void {
+    setTimeout(() => {});
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
