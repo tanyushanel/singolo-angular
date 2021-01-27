@@ -3,12 +3,16 @@
          (click)="shiftImg()">
         keyboard_arrow_left
     </div>
-    <ul class="slider-images">
+    <ul class="slider-images"
+        [style.background]="toggler ? '#f06c64' : '#648bf0'">
         <li class="sld-img sld-img-1"
             [style.display]="toggler ? 'block' : 'none'">
+
             <app-phone class="phone"></app-phone>
             <app-phone class="phone horizont"
                        [isHorizontal]="true"></app-phone>
+
+
         </li>
         <li class="sld-img sld-img-2"
             [style.display]="toggler ? 'none' : 'block'">

@@ -1,4 +1,4 @@
-.slider.container {
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,15 +30,15 @@
 
 .sld-img {
   position: absolute;
-  padding: 4.25rem 0 0 7rem;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 0.375rem solid#EA676B;
+  white-space: nowrap;
 }
 
 .slider-images {
   height: 100%;
+  border-bottom: 0.375rem solid#EA676B;
 }
 
 .phone {
