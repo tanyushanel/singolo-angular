@@ -54,6 +54,10 @@ p {
   .services-list {
     flex-flow: wrap 30%;
   }
+
+  .service:not(:nth-child(3n + 3)) {
+    margin-right: 1rem;
+  }
   .sld-img {
     padding: 4.25rem 0 0 7rem;
   }

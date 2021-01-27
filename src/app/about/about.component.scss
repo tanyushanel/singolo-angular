@@ -16,6 +16,7 @@ h2 {
 .staff-list {
   display: flex;
   justify-content: space-between;
+  flex-flow: wrap row;
 }
 
 .desc {

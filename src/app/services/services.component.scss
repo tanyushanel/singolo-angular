@@ -39,19 +39,16 @@ h2 {
 .desc p {
   font-size: 0.75em;
   margin: 0;
+  white-space: normal;
 }
 
 .services-list {
   display: flex;
   justify-items: space-between;
   flex-wrap: wrap;
+  white-space: nowrap;
 }
 
 .service {
   margin-bottom: 0.5rem;
 }
-
-.service:not(:nth-child(3n + 3)) {
-  margin-right: 1rem;
-}
-
