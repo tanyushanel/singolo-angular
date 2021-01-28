@@ -1,13 +1,17 @@
 h1 {
   line-height: 1.5rem;
-  margin: 0;
-
+  margin: 2rem 2.5rem;
   text-transform: uppercase;
   font-size: 1.5em;
   color: #ffffff;
-  padding: 2rem 2.5rem;
 
   & span {
     color: #f06c64;
+  }
+}
+
+@media (max-width: 374px) {
+  .logo {
+    margin: 2rem 7.5rem;
   }
 }

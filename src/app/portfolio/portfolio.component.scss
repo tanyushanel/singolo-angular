@@ -35,9 +35,8 @@ h2 {
 
 .portfolio-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  flex: 4 1 13.75rem;
+  justify-content: space-around;
 }
 
 .portfolio-img:nth-child(n + 13) {
@@ -46,7 +45,7 @@ h2 {
 
 .portfolio-img {
   margin-top: 1rem;
-  height: 12rem;
+  height: auto;
 }
 
 .portfolio-img:hover {

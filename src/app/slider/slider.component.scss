@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 37.125rem;
+  max-height: 37.125rem;
 }
 
 .btn {
@@ -29,7 +29,6 @@
 }
 
 .sld-img {
-  position: absolute;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
