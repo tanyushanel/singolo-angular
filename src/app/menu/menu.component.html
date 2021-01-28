@@ -2,8 +2,9 @@
      [hidden]="isSmallScreen"
      [class.clicked]="isClicked"
      (click)="openMenu()"></div>
+
 <ul class="menu-list"
-    [class.vertical]="isSmallScreen || isClicked">
+    [class.vertical]="isClicked">
     <li class="menu-item"><a href="#home">Home</a></li>
     <li class="menu-item"><a href="#service">Services</a></li>
     <li class="menu-item"><a href="#portfolio">Portfolio</a></li>

@@ -69,6 +69,10 @@ p {
   .portfolio-list {
     justify-content: space-between;
   }
+
+  .menu-btn {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
@@ -89,6 +93,10 @@ p {
   }
   .portfolio-list {
     justify-content: space-between;
+  }
+
+  .menu-btn {
+    display: none;
   }
 }
 
@@ -111,6 +119,17 @@ p {
 
   .portfolio-list {
     justify-content: space-between;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-list {
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+    letter-spacing: -0.03em;
   }
 }
 
@@ -155,7 +174,6 @@ p {
   }
 
   .menu {
-    display: block;
     position: absolute;
     top: 2rem;
     left: 2rem;
@@ -164,6 +182,10 @@ p {
 
     cursor: pointer;
     z-index: 5;
+  }
+
+  .menu-btn {
+    display: block;
   }
 
   .menu-list.vertical {
@@ -185,7 +207,9 @@ p {
     .menu-item::after {
       visibility: hidden;
     }
+  }
 
-
+  .menu-list {
+    position: absolute;
   }
 }

@@ -6,15 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  isSmallScreen: boolean = true;
+  isSmallScreen: boolean = false;
   isClicked: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
-
-  // switchMiniMenu(): void {
-  //   this.isSmallScreen = true;
-  // }
 
   openMenu(): void {
     this.isClicked = !this.isClicked;
