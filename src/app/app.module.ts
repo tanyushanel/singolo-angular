@@ -13,9 +13,10 @@ import { QuoteComponent } from './quote/quote.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { LogoComponent } from './logo/logo.component';
-import { PhoneComponent } from './slider/phones/phone/phone.component';
+
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { PhoneComponent } from './slider/phone/phone.component';
 
 @NgModule({
   declarations: [
