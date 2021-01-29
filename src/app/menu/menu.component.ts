@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,13 +6,40 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  isSmallScreen: boolean = false;
-  isClicked: boolean = false;
+  public innerWidth: any;
+
+  isSmallScreen: boolean;
+  isClicked: boolean;
+  isMenuHidden: boolean;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.innerWidth = window.innerWidth; // init value
 
-  openMenu(): void {
-    this.isClicked = !this.isClicked;
+    this.isClicked = true;
+    this.isMenuHidden = false;
+    if (this.innerWidth <= 375) {
+      this.isSmallScreen = true;
+      this.toggleMenu();
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event): void {
+    console.log('RESIZING to ' + window.innerWidth);
+    this.innerWidth = window.innerWidth;
+
+    if (this.innerWidth <= 375) {
+      this.isSmallScreen = true;
+      this.toggleMenu();
+    }
+  }
+
+  toggleMenu(): void {
+    if (this.isSmallScreen) {
+      this.isClicked = !this.isClicked;
+      this.isMenuHidden = !this.isMenuHidden;
+    }
   }
 }

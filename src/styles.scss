@@ -124,13 +124,6 @@ p {
   .menu-btn {
     display: none;
   }
-
-  .menu-list {
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 1.3rem;
-    letter-spacing: -0.03em;
-  }
 }
 
 @media (max-width: 375px) {
@@ -164,10 +157,6 @@ p {
     justify-content: space-around;
   }
 
-  .menu-list {
-    display: none;
-  }
-
   .logo {
     z-index: 10;
     margin: 0 auto;
@@ -186,6 +175,11 @@ p {
 
   .menu-btn {
     display: block;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
   }
 
   .menu-list.vertical {
@@ -207,9 +201,5 @@ p {
     .menu-item::after {
       visibility: hidden;
     }
-  }
-
-  .menu-list {
-    position: absolute;
   }
 }
