@@ -17,6 +17,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.innerWidth = window.innerWidth; // init value
 
+    this.isSmallScreen = false;
     this.isClicked = true;
     this.isMenuHidden = false;
     if (this.innerWidth <= 375) {
@@ -26,7 +27,7 @@ export class MenuComponent implements OnInit {
   }
 
   @HostListener('window:resize', ['$event'])
-  onWindowResize(event): void {
+  onWindowResize(event: EventTarget): void {
     console.log('RESIZING to ' + window.innerWidth);
     this.innerWidth = window.innerWidth;
 
@@ -39,7 +40,7 @@ export class MenuComponent implements OnInit {
   toggleMenu(): void {
     if (this.isSmallScreen) {
       this.isClicked = !this.isClicked;
-      this.isMenuHidden = !this.isMenuHidden;
+      this.isClicked ? (this.isMenuHidden = false) : (this.isMenuHidden = true);
     }
   }
 }
