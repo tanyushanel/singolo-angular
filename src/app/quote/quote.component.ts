@@ -22,9 +22,9 @@ export class QuoteComponent implements OnInit {
   sendMessage(): void {
     const message = new Message();
     message.content = this.contentControl.value;
-    message.name = this.contentControl.value;
-    message.subject = this.contentControl.value;
-    message.email = this.contentControl.value;
+    message.name = this.nameControl.value;
+    message.subject = this.subjectControl.value;
+    message.email = this.emailControl.value;
     this.quoteService.saveMessage(message);
     this.isSent = true;
   }
